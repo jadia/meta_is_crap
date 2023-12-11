@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Basic HTML Page</title>
-</head>
-<body>
-    <p>This is some basic content.</p>
-
-<!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -25,6 +21,11 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=317211190882757&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
+</head>
+<body>
+    <p>This is some basic content.</p>
+  <script>
+    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+  </script>
 </body>
 </html>
